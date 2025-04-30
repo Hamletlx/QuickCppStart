@@ -60,15 +60,15 @@ make clean  # 删除所有生成文件
 
 1. 源文件 → 放入 src/（自动编译）
 2. 头文件 → 放入 include/（自动链接
-3. 第三方库 → 放入 lib/，并修改 Makefile 中的 LDLIBS 变量
+3. 第三方库 → 放入 lib/，并修改 Makefile 中的 LIBS 变量
 
 ### 自定义配置
 
 编辑 Makefile 中以下变量：
 
 ```bash
-LDLIBS = -lyour_library  # 链接自定义库（如 -lboost）
-CXXFLAGS += -Your_flag   # 添加编译选项（如 -pthread）
+LIBS = -lyour_library  # 链接库文件（如 -pthread -lm -ldl -lrt -lz）
+FLAGS += -Your_flag    # 添加其他编译选项（如 -D:定义宏 等）
 ```
 
 ## 💡注意事项
