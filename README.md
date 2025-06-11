@@ -73,4 +73,4 @@ FLAGS += -Your_flag    # 添加其他编译选项（如 -D:定义宏 等）
 
 ## 💡注意事项
 
-* Windows 平台中 MinWG 的 make 可能被修改成了 mingw32-make，可以使用 mingw32-make 替代 make 或者拷贝 mingw32-make 的副本并重命名为make
+* Windows 平台中 MinGW 的 make 可能被修改成了 mingw32-make，可以使用 mingw32-make 替代 make 或者拷贝 mingw32-make 的副本并重命名为make
